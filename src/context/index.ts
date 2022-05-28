@@ -3,7 +3,7 @@ import { createContext } from 'react';
 import { IDndContextProps } from './interface';
 
 const DndContext = createContext<IDndContextProps>({
-	moveDndItems: (currentId, id) => {},
+    moveDndItems: (currentId, id) => {},
     moveDndChildItems: (parentId, index, originalIndex) => {},
     addDndItems: (fromParentId, fromItemId, toParentId, toItemId) => {},
     removeDndItem: (parentId, itemId) => {},

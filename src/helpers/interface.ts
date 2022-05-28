@@ -1,7 +1,24 @@
-import { IDataItems, IDataChildrenItems } from '../MotoBlock/components/Drop/interface';
+import {
+    IDataItems,
+    IDataChildrenItems,
+} from '../DndBlock/components/DndDrop/interface';
 
-export type FindItem = (id: number, dropData: IDataItems[]) => { index: number, dropItem: IDataItems };
-export type FindChildrenItem = (id: number, dropData: IDataChildrenItems[]) => { index: number, dropItem: IDataChildrenItems };
+export type DndFindItem = (
+    id: number,
+    dropData: IDataItems[]
+) => { index: number; dropItem: IDataItems };
+export type DndFindChildrenItem = (
+    id: number,
+    dropData: IDataChildrenItems[]
+) => { index: number; dropItem: IDataChildrenItems };
 
-export type MoveItem = (prevState: IDataItems[], dragId: number, dropId: number) => IDataItems[];
-export type MoveChildrenItem = (prevState: IDataChildrenItems[], dragId: number, dropId: number) => IDataChildrenItems[];
+export type DndMoveItem = (
+    prevState: IDataItems[],
+    dragId: number,
+    dropId: number
+) => IDataItems[];
+export type DndMoveChildrenItem = (
+    prevState: IDataChildrenItems[],
+    dragId: number,
+    dropId: number
+) => IDataChildrenItems[];

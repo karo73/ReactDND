@@ -2,18 +2,18 @@
     height: 100%;
     left: 0;
     pointer-events: none;
-	position: fixed;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
 }
 
 .custom-drag-layer .drop-box {
-	border: none;
-	width: 381px;
+    border: none;
+    width: 381px;
 }
 
 .custom-drag-layer--nested .nested-list {
-	margin: -10px 0 0 10px;
-	width: 331px;
+    margin: -10px 0 0 10px;
+    width: 331px;
 }
